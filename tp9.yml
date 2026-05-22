@@ -1,0 +1,17 @@
+name: tp9
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  MA_VARIABLE: nom_de_variable
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Afficher le nom de ma variable
+        run: echo "Nom de ma variable : $MA_VARIABLE"
